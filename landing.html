@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Landing Page</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+
+        <style type="text/css">
+            *{padding: 0; margin:0; box-sizing: border-box;}
+            body{
+                background-image:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url('img.jpg');
+                width: 600px;
+                height: 50vh;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                font-family:sans-serif;
+            }
+            nav{
+                width: 255%;
+                height: 100px;
+                
+                color: white;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .logo{
+                font-size: 2em;
+                letter-spacing: 2px;
+            }
+            .menu a{
+                text-decoration: none;
+                color: white;
+                padding: 10px 20px;
+                font-size: 20px;
+                position: relative;
+            }
+            .menu a::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0%;
+                height: 100%;
+                border-bottom: 2px solid white;
+                transition: 0.4s linear;
+            }
+            .menu a:hover::before{
+                width: 90%;
+            }
+            .register a{
+                text-decoration: none;
+                color: white;
+                padding: 10px 20px;
+                font-size: 20px;
+                background: rgb(169, 10, 63);
+                border-radius: 8px;
+                border-color: rgb(54, 3, 3);
+                transition: 0.4s;
+            }
+            .register a:hover{
+                background: transparent;
+                border: 1px solid rgb(169, 10, 63);
+            }
+            .h-txt{
+                max-width: 650px;
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(25%,25%);
+                text-align: center;
+                color: white;
+            }
+            .h-txt span{
+                letter-spacing: 5px;
+            }
+            .h-txt h1{
+                font-size: 3.5em;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                     Task-1<b>(Level-1)</Level-1></b>
+                </div>
+                <div class="menu" >
+                    <ul>
+                        <li style="display:inline-block;">
+                            <a href="#" >Free Landing Pages</a>
+                        </li>
+                        <li style="display:inline-block;">
+                            <a href="#" >Features</a>
+
+                        </li>
+                        <li style="display:inline-block;">
+                            <a href="#">Services</a>
+                        </li>
+                        <li style="display:inline-block;">
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li style="display:inline-block;">
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+                
+                <div class="register">
+                    <li style="display:inline-block;">
+                        <a href="#">Sign in</a>
+                    </li>
+                    <li style="display:inline-block;">
+                        <a href="#">Get Started</a>
+                    </li>
+                </div>
+            </nav>
+            <section class="h-txt">
+                <span>PRESENT YOUR FUTURE</span>
+                <br>
+                <br>
+                <h1>Make landing pages</h1><br><h1>fast and easily</h1>
+                <br>
+                <p><h3>Create custom landing pages with Shades that convert</h3></p><br><p><h3>more visitors than any website-no coding required.</h3></p>
+                <br>
+                <form>
+                    <input type="email" name="Email" placeholder="Enter Your Email ID" required>
+                    <button type="submit"><img src="send.png" width="70px"></button>
+                </form>
+                
+                
+            </section>
+        </header>
+    </body>
+</html>
